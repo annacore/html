@@ -1,52 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Biodata</title>
+<meta charset="UTF-8">
+<title>High-Tech Biodata</title>
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .card {
+        width: 75%;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 3px solid #00e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #00e6e6;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #00e6e6;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: normal;
+        opacity: 0.8;
+        margin-top: 6px;
+    }
+
+    .section {
+        margin-top: 22px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        color: #00e6e6;
+        border-left: 4px solid #00e6e6;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+    }
+
+    .info-box {
+        background: rgba(255,255,255,0.08);
+        padding: 10px 14px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    .skills span {
+        display: inline-block;
+        background: linear-gradient(135deg, #00e6e6, #00b3b3);
+        color: #000;
+        padding: 6px 12px;
+        margin: 6px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+</style>
 </head>
-<body bgcolor="pink">
 
-    <center>
-        <h1>BIODATA</h1>
-    </center>
+<body>
 
-    <hr>
+<div class="card">
 
-    <h3>Personal Details</h3>
-    <p><b>Name:</b> Ananya Chanda</p>
-    <p><b>Date of Birth:</b> 13-01-2006</p>
-    <p><b>Gender:</b> Female</p>
-    <p><b>Nationality:</b> Indian</p>
-    <p><b>Marital Status:</b> Single</p>
+    <div class="header">
+        <div class="avatar">AC</div>
+        <div>
+            <h1>Ananya Chanda</h1>
+            <h2>B.S. Computer Science Student</h2>
+        </div>
+    </div>
 
-    <h3>Contact Details</h3>
-    <p><b>Email:</b> ananyachanda06@gmail.com</p>
-    <p><b>Phone:</b>+916291940563</p>
-    <p><b>Address:</b> Kolkata, West Bengal</p>
+    <div class="section">
+        <div class="section-title">Personal Information</div>
+        <div class="info-grid">
+            <div class="info-box"><b>DOB:</b> 13-01-2006</div>
+            <div class="info-box"><b>Gender:</b> Female</div>
+            <div class="info-box"><b>Nationality:</b> Indian</div>
+            <div class="info-box"><b>Marital Status:</b> Single</div>
+        </div>
+    </div>
 
-    <h3>Educational Qualification</h3>
-    <ul>
-        <li>B.S. Computer Science – St. Xavier's College</li>
-        <li>Higher Secondary – ICSE</li>
-        <li>Secondary – ICSE</li>
-    </ul>
+    <div class="section">
+        <div class="section-title">Contact</div>
+        <div class="info-grid">
+            <div class="info-box"><b>Email:</b> ananya@example.com</div>
+            <div class="info-box"><b>Phone:</b> 9XXXXXXXXX</div>
+            <div class="info-box"><b>Location:</b> Kolkata, India</div>
+        </div>
+    </div>
 
-    <h3>Skills</h3>
-    <ul>
-        <li>Python</li>
-        <li>C, C++</li>
-        <li>Basic Cybersecurity</li>
-        <li>VS Code</li>
-    </ul>
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="info-box">
+            B.S. Computer Science – St. Xavier's College
+        </div>
+    </div>
 
-    <h3>Hobbies</h3>
-    <ul>
-        <li>Reading</li>
-        <li>Coding</li>
-        <li>Listening to music</li>
-    </ul>
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Cybersecurity</span>
+            <span>VS Code</span>
+        </div>
+    </div>
 
-    <h3>Declaration</h3>
-    <p>I hereby declare that the above information is true to the best of my knowledge.</p>
-    <p><b>Place:</b> Kolkata</p>
+    <div class="section">
+        <div class="section-title">Declaration</div>
+        <p>
+            I hereby declare that the above information is true and correct to the best of my knowledge.
+        </p>
+    </div>
+
+    <div class="footer">
+        Place: Kolkata <br>
+        Signature: __________
+    </div>
+
+</div>
+
 </body>
 </html>
