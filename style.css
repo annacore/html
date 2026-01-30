@@ -1,0 +1,19 @@
+.dv1 {
+  width: 600px;
+  height: 220px;
+  border: 1px solid #000;
+}
+.bg-red {
+  background-color: rgb(255, 211, 211);
+}
+.bg-yellow {
+  background-color: rgb(255, 255, 171);
+}
+.bg-green {
+  background-color: rgb(223, 255, 176);
+}
+.text-justify {
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+}
