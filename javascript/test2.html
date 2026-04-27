@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        Enter your Name
+        <input type="text" name="name" id="name"><br>
+        <button type="button" onclick="displayName();">Click Me</button>
+    </form>
+    <script>
+        function displayName()
+        {
+            var name=document.getElementById('name').value;
+            alert("Your name is "+name);
+        }
+    </script>
+</body>
+</html>

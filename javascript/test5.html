@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>function displayName()
+    {
+        var fullname=document.getElementById('fullname').value;
+        if(fullname==" ")
+    {
+        alert("please enter your name");
+    }else
+    {
+        document.getElementById('msg').innerHTML='Your name is'+fullname;
+    }
+    }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Enter your name
+        <input type="text" name="fullname" id="fullname"><br><br>
+        <button type="button" onclick="displayName()">Click Me</button>
+    </form>
+    <lable id="msg"></lable>
+</body>
+</html>

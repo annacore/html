@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function displayName()
+        {
+            var name=document.getElementByID('name').value;
+            if(name=="")
+        {
+            document.getElementById('msg').innerHTML="Please enter your name";
+        }
+        else{
+            document.getElementById('msg').innerHTML="Your name is "+name;
+        }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Enter your Name
+        <input type="text" name="name" id="name"><br>
+        <button type="button" onclick="displayName();">Click Me</button>
+    </form>
+    <label for="msg" id="msg"></label>
+    </body>
+</html>
